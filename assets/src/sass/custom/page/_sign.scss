@@ -1,0 +1,122 @@
+
+.signin{
+  background-color: $site-body-dark-bg;
+
+  &-section{
+    min-height: 150px;
+    height: 100%;
+    position: relative;
+
+    @include BootstrapMaxWidthResponsive(1k){
+      min-height: 128px;
+    }
+    @include BootstrapMaxWidthResponsive(lg){
+      min-height: 78px;
+    }
+    @include BootstrapMaxWidthResponsive(md){
+      min-height: 64px;
+    }
+
+    > .container{
+      @include flexbox-display-flex();
+      @include flexbox-justify-content(center);
+      @include flexbox-align-items(center);
+      height: 100%;
+      padding-top: 50px;
+      padding-bottom: 100px;
+      position: relative;
+
+      @include BootstrapMaxWidthResponsive(1k){
+      }
+      @include BootstrapMaxWidthResponsive(lg){
+      }
+      @include BootstrapMaxWidthResponsive(md){
+      }
+    }
+  }
+
+  &-formarea{
+    position: relative;
+
+    @include BootstrapMaxWidthResponsive(lg){
+      padding-bottom: 45px;
+    }
+  }
+
+  .complogo{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .sitemodalformbox{
+    //color: $site-clr-white;
+    background-color: $site-clr-white;
+    //background-color: transparent;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    @include border-radius(4px);
+    @include box-shadow(0 0 40px transparentize($global-clr-black, 0.85));
+
+    @include BootstrapMaxWidthResponsive(md){
+      padding: 30px;
+    }
+    @include BootstrapMaxWidthResponsive(sm){
+      padding: 25px;
+    }
+    @include BootstrapMaxWidthResponsive(xm){
+      padding: 20px;
+    }
+
+    &-head{
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    &-alert{
+
+      @include BootstrapMaxWidthResponsive(sm){
+        margin-top: 10px;
+      }
+
+      .alert{
+        border-color: $border-color;
+        margin-bottom: $alert-margin-bottom/2;
+      }
+
+      & + form{
+        //margin-top: 20px;
+
+        @include BootstrapMaxWidthResponsive(sm){
+          margin-top: 10px;
+        }
+      }
+    }
+
+    &-form{
+      position: relative;
+      z-index: 1;
+      margin-top: 15px;
+
+      @include BootstrapMaxWidthResponsive(sm){
+        margin-top: 10px;
+      }
+
+      .input-info{
+        color: lighten($global-clr-green, 15%) !important;
+        opacity: 1;
+
+        a{color: lighten($global-clr-green, 15%) !important;}
+      }
+
+      .custom-control-group-vertical{
+        label{margin-bottom: 0;}
+      }
+
+      .btn{
+        //margin-top: 10px;
+      }
+    }
+  }
+
+}

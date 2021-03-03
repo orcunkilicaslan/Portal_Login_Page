@@ -1,0 +1,73 @@
+/* Site General Color Settings */
+$site-clr-white:                #FFFFFF;
+$site-clr-black:                #000000;
+$site-clr-blue:                 #388CFF;
+$site-clr-cyan:                 #20BDBC;
+$site-clr-green:                #15B583;
+$site-clr-red:                  #FF4052;
+$site-clr-orange:               #E67948;
+$site-clr-yellow:               #FF8C00;
+/* Site General Color Settings */
+
+/* Site Gradient Background Color */
+$site-body-dark-bg:             #18203D;
+$site-grdint-darkblue01:        #002960;
+$site-grdint-darkblue02:        #0D78C4;
+/* Site Gradient Background Color */
+
+/* Site Border Color Settings */
+$site-brdr-light:                       #e0e5ec;
+$site-brdr-light-focus:                 darken($site-brdr-light, 15%);
+$site-brdr-light-opacity:               #F2F5F9;
+$site-brdr-light-input:                 $site-brdr-light;
+$site-brdr-light-input-focus:           $site-brdr-light-focus;
+/* Site Border Color Settings */
+
+/* Site Main Settings */
+$site-font-family-default:              'Roboto', sans-serif;
+$site-clr-text-pri:                     $site-body-dark-bg;
+$site-clr-text-sec:                     lighten($site-clr-text-pri, 10%);
+/* Site Main Color Settings */
+
+/* Site Main Path Settings */
+$cache-busting:           #{'?v='}(unique_id());
+$path-assets-url:         "../../../assets" !default;
+$path-fonts-url:          "#{$path-assets-url}/fonts" !default;
+$path-img-url:            "#{$path-assets-url}/images" !default;
+$path-img-url-icons:      "#{$path-img-url}/icons" !default;
+/* Site Main Path Settings */
+
+/* General Booststrap Site and Button Color Settings */
+$global-clr-white:              $site-clr-white;
+$global-clr-gray-100:           #f8f9fa;
+$global-clr-gray-200:           #e9ecef;
+$global-clr-gray-300:           #dee2e6;
+$global-clr-gray-400:           #ced4da;
+$global-clr-gray-500:           #adb5bd;
+$global-clr-gray-600:           #6c757d;
+$global-clr-gray-700:           #495057;
+$global-clr-gray-800:           #343a40;
+$global-clr-gray-900:           #212529;
+$global-clr-black:              $site-clr-black;
+$global-clr-secondary:          $global-clr-gray-700;
+$global-clr-blue:               #007bff;
+$global-clr-indigo:             #6610f2;
+$global-clr-purple:             #6f42c1;
+$global-clr-pink:               #e83e8c;
+$global-clr-red:                $site-clr-red;
+$global-clr-orange:             $site-clr-orange;
+$global-clr-yellow:             #ffc107;
+$global-clr-green:              $site-clr-green;
+$global-clr-teal:               #20c997;
+$global-clr-cyan:               #17a2b8;
+$global-btn-primary:            $global-clr-blue;
+$global-btn-secondary:          $global-clr-secondary;
+$global-btn-success:            $global-clr-green;
+$global-btn-info:               $global-clr-cyan;
+$global-btn-warning:            $global-clr-orange;
+$global-btn-danger:             $global-clr-red;
+$global-btn-light:              $global-clr-gray-100;
+$global-btn-dark:               $global-clr-gray-800;
+$global-link-color:             $site-clr-text-pri;
+$global-table-border-color:     $site-brdr-light;
+/* General Booststrap Site and Button Color Settings */

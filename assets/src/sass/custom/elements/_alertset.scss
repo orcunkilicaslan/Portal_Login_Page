@@ -1,0 +1,73 @@
+/* Variables */
+$alert-bg-color:      $body-bg;
+$alert-text-color:    $site-clr-text-pri;
+$alert-border-color:  $border-color;
+/* Variables */
+
+.alert{
+  //color: $alert-text-color;
+  background-color: $alert-bg-color;
+  border-color: $alert-border-color;
+  $alertclassname: &;
+
+  .close{
+    background-color: transparent;
+    width: 16px;
+    height: 16px;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: $font-weight-normal;
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    position: absolute;
+    right: $alert-padding-y;
+    top: $alert-padding-y;
+    text-shadow: none;
+    @include border-radius(50%);
+
+    span{
+      position: relative;
+      top: -5px;
+    }
+
+    &:hover{
+      color: $alert-text-color;
+    }
+  }
+
+  &-heading{
+    font-size: $font-size-base;
+    margin-bottom: 0;
+  }
+
+  p{
+    color: $alert-text-color;
+  }
+
+
+  &-sweet{
+
+    #{$alertclassname}-flex{
+      @include flexbox-display-flex();
+      @include flexbox-align-items(center);
+    }
+
+    #{$alertclassname}-icon{
+      @include flexbox-flex(0 0 auto);
+      width: auto;
+      max-width: 100%;
+      padding-right: $alert-padding-y;
+
+    }
+    #{$alertclassname}-desc{
+      @include flexbox-flex-basis(0);
+      @include flexbox-flex-grow(1);
+      max-width: 100%;
+    }
+
+    #{$alertclassname}-heading{text-transform: uppercase;}
+
+    #{$alertclassname}-desc{}
+  }
+}

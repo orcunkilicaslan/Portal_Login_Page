@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="tr">
+<head>
+    <title>PORTAL</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" sizes="32x32" />
+    <link rel="stylesheet" href="../assets/dist/css/custom-app.css">
+    <script src="../assets/cdn/jquery/jquery.3.5.1.min.js"></script>
+    <script src="../assets/cdn/popper/popper.1.16.1.min.js"></script>
+    <script src="../assets/cdn/bootstrap/bootstrap.4.5.2.min.js"></script>
+</head>
+<body>
+
+<!-- Sign Area -->
+<section class="signin signin-section">
+    <div class="container">
+        <div class="signin-formarea">
+
+            <div class="complogo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="183.166" height="26.56" viewBox="0 0 183.166 26.56">
+                    <path d="M125.605,83.269v25.665h2.848V87.105h.067l9.226,10.276L147,87.105h.065v21.83h2.846V83.269H147.06l-9.314,10.383-9.293-10.383h-2.848Zm33.632,12.858a13.382,13.382,0,1,0,13.38-13.313A13.311,13.311,0,0,0,159.237,96.127Zm23.9-.033a10.522,10.522,0,1,1-10.525-10.625A10.62,10.62,0,0,1,183.141,96.094ZM73.44,83.254v25.681H78.2c4.018,0,7.082-.512,10.149-3.242a13.191,13.191,0,0,0-.066-19.338c-3.036-2.59-6.165-3.1-10.017-3.1H73.44Zm4.935,2.659c3.029,0,5.619.406,7.967,2.485a10.488,10.488,0,0,1,.136,15.222c-2.349,2.215-4.972,2.656-8.1,2.656H76.294V85.913h2.081Zm23.481-2.659v25.681h13.308v-2.66H104.714V97.381h10.15V94.726h-10.15V85.913h10.451V83.254ZM61.943,92.417l3.881-8.686L63.3,82.814,60.1,91.7l1.843.718Zm-9.5,9.022c0-4.086-2.822-5.755-6.16-7.218l-1.705-.75c-1.737-.783-4.02-1.807-4.02-4.018a4.076,4.076,0,0,1,4.258-3.984,4.714,4.714,0,0,1,4.43,2.792L51.527,86.8a7.362,7.362,0,0,0-6.637-3.984c-3.815,0-7.185,2.553-7.185,6.537,0,3.677,2.587,5.209,5.582,6.573l1.566.678c2.379,1.09,4.734,2.111,4.734,5.106a5.164,5.164,0,0,1-5.283,5.01,5.291,5.291,0,0,1-5.14-4.767l-2.792.782a8.1,8.1,0,0,0,16.073-1.294ZM30.365,85.913V83.254H15.041v2.659h6.2v23.022H24.1V85.913h6.267ZM2.834,108.935H5.695V83.257H2.834Z" transform="translate(-2.834 -82.814)" fill="#fff" fill-rule="evenodd"/>
+                </svg>
+            </div>
+
+            <div class="sitemodalformbox">
+                <div class="sitemodalformbox-head">
+                    <h2>Üye Girişi</h2>
+                    <p>Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</p>
+                </div>
+                <div class="sitemodalformbox-alert d-none">
+                    <div class="alert alert-sweet alert-success" role="alert">
+                        <div class="alert-flex">
+                            <div class="alert-icon">
+                                <div class="animation-alert-icons">
+                                    <div class="alert-icons alert-icons-success">
+                                        <div class="alert-icons-success-tip"></div>
+                                        <div class="alert-icons-success-long"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="alert-desc">
+                                <h6 class="alert-heading">Well done!</h6>
+                                <p>Aww yeah, you successfully read this important alert message.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="alert alert-sweet alert-warning" role="alert">
+                        <div class="alert-flex">
+                            <div class="alert-icon">
+                                <div class="animation-alert-icons">
+                                    <div class="alert-icons alert-icons-warning">
+                                        <div class="alert-icons-warning-body"></div>
+                                        <div class="alert-icons-warning-dot"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="alert-desc">
+                                <h6 class="alert-heading">Warning!</h6>
+                                <p>Aww yeah, you successfully read this important alert message.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="alert alert-sweet alert-danger" role="alert">
+                        <div class="alert-flex">
+                            <div class="alert-icon">
+                                <div class="animation-alert-icons">
+                                    <div class="alert-icons alert-icons-error">
+                                        <div class="alert-icons-error-x">
+                                            <div class="alert-icons-error-x-left"></div>
+                                            <div class="alert-icons-error-x-right"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="alert-desc">
+                                <h6 class="alert-heading">Oops...</h6>
+                                <p>Aww yeah, you successfully read this important alert message.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="sitemodalformbox-form siteformui" autocomplete="off" novalidate>
+                    <div class="form-group">
+                        <label for="signinemail">E-Posta Adresiniz</label>
+                        <input id="signinemail" type="email" class="form-control" pattern="([A-Za-z0-9][._]?)+[A-Za-z0-9]@[A-Za-z0-9]+(\.?[A-Za-z0-9]){2}\.([A-Za-z0-9])+(\.[A-Za-z0-9]{2})?" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="signinpass">Parolanız</label>
+                        <input id="signinpass" type="password" class="form-control" pattern=".{0}|.{1,}" required />
+                    </div>
+                    <div class="form-group custom-control-group-vertical">
+                        <div class="recaptcha-area">
+                            <div class="recaptcha-check">
+                                <div class="g-recaptcha" data-theme="light" data-sitekey="6LewOKAUAAAAAMDO2yohWeyDcjFAHfcuEqK2mIp4"></div>
+                            </div>
+                            <label>Ben Robot Değilim</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-info w-100">GİRİŞ YAPIN</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Sign Area -->
+
+<!-- JavaScript Start -->
+<script src="https://www.google.com/recaptcha/api.js" async=""></script>
+<script src="../assets/dist/js/custom-app.js"></script>
+<!-- JavaScript End -->
+
+</body>
+</html>
